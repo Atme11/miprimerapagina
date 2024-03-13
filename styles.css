@@ -1,0 +1,170 @@
+*{ /*quita los bordes blancos por defecto*/
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif; /*tipo de letra Roboto regular 400*/   
+}
+ol,ul{ /* sacando el punto de las listas li*/
+    list-style: none; /* saca el punto de las listas*/
+}
+a{/*quitando decoracion*/
+    text-decoration: none; /*le quita la linea de decoracion de las palabras con vinculos*/
+    color: #e5fcc2; /*color de todos los enlaces*/
+}
+/*----------Encabezado----------------------------------*/
+header{
+    background-color: #594f4f;  
+    display: flex;
+    align-items: center; /*centrado de los elementos del encabezado*/
+    justify-content: space-between;
+}
+header nav ul{ /*espacio de los elementos de ul*/ 
+    display: flex;
+    gap: 1.1em; 
+    padding: 10px;
+}
+header a i{ /*modifica el icono de nuestro pagina*/
+    color: #e5fcc2;
+    font-size: 3em;
+    padding: 0.5em;
+}
+/*-------------Menu--------------*/
+#check{
+    display: none;
+}
+.checkbtn {
+font-size: 25px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+cursor: pointer;
+display: none;
+}
+/*-----------------------------------------------------------*/
+/*------------- acerca de mi--------------------------------*/
+.seccion-1{ /*modificamos el acerca de mi*/
+    background-color: #45ada8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 2em;
+    gap: 2em;
+}
+/*-----------------------------------------------------------*/
+/*modificacion de la imagen central*/
+.seccion-2 img{
+    width: 50%;
+    border-radius: 30px; /*quita los bordes de una imagen*/
+}
+.seccion-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #92b395;
+}
+/*--------------------------------------------------------*/
+/*-----------------------Articulo------------------------*/
+.seccion-3{ /*modificacion de los articulos*/
+   background-color: gray;
+    display: flex;
+    justify-content: center; /*mantenerlo en el centro de la PagWeb*/
+    flex-wrap: wrap; /* posicionar los elementos en una linea horizontal*/
+}
+.cuerpo-articulo{
+    width: 50%;/*cuando la pagina web tenga un ancho inferior a 900
+    (segun el media quieres) el ancho del cuerpo del articulo cambia a 50%*/
+    margin: 5%; /*para dar espacio a los articulos*/
+    display: flex;
+    justify-content: center; /*mantener centrado el elemento*/
+}
+.cuerpo-articulo .articulo-tres{ /*modificacion del contenido del articulo*/
+display: flex; 
+flex-direction: column;/*los elementos se ponen en vertical*/
+justify-content: space-between;/*darmos espacio a los elementos*/
+align-items: center;/*centrado horizontal*/
+}
+
+.cuerpo-articulo img{
+    border-radius: 30px; /*quita el borde de la imagen*/
+}
+.cuerpo-articulo img,p{ /*espacio de los elementos del articulo*/
+    padding: 10px;
+}
+/*----------------------------------*/
+/*-----------Footer----------------*/
+footer{
+    background-color: #547980;
+    width: 100%;
+}
+#footer{
+    padding: 1em;
+}
+a i.fa-solid.fa-house-chimney.fixed{ /*modificacion el icono */
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+}
+h3{
+    color: #9de0ad;
+    font-size: 1.17em;
+    padding: 1em 0px 1em 0px;
+}
+/*-----------------------------------*/
+/*--------Media queries---------------*/
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (min-width: 900px) {
+     .cuerpo-articulo{
+        width: 30%;
+    }
+/*cuando la pagina web tenga un ancho superior a 900 
+el ancho del cuerpo del articulo cambia a 30%*/
+}
+@media (min-width: 1200px) {
+     .cuerpo-articulo{
+        width: 20%;
+    }
+/*cuando la pagina web tenga un ancho superior a 1200 
+el ancho del cuerpo del articulo cambia a 20%*/
+}
+@media (max-width: 760px) {
+/*cuando la pagina web tenga un ancho inferior a 760 
+los elementos pasan a posicionarse en vertical*/
+        .seccion-1{ 
+            flex-direction: column;
+        }
+
+/*----------efectos del botonde menu-----------*/
+    .checkbtn{
+        display: block;
+    }
+    #encabezado ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: #2c3e50;
+            text-align: center;
+            top: 80px;
+            left: 100%;
+            transition: all 0.5s;
+    }
+    #check:checked ~ ul{
+        left: 0%;
+        display: block;
+    }
+    #encabezado nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    #encabezado nav ul li a{
+        font-size: 20px;
+    }
+    #check:checked ~ .checkbtn{
+        color:#2c3e50;
+    }
+
+} 
+/*------------------------------------*/
+

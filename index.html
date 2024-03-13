@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi primera web</title> <!-- titulo de mi pagina -->
+        <link rel="stylesheet" href="styles.css"> <!-- code para vincular html con css -->
+        <script src="https://kit.fontawesome.com/9404147037.js" crossorigin="anonymous"></script> <!-- vinculo del sitio web del icono  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Vinculo para el tipo de letra Roboto-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Roboto&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script><!--Conectado con el docJava defer es para demorar un poco
+        y pueda leer mejor el doc java-->
+    </head>
+    <body>
+        <div class="container">
+            <!-- -----------------------encabezado----------------------- -->
+            <header id="encabezado">
+                <a href="index.html"><i class="fa-solid fa-house-chimney"></i></a> <!-- icono de casa -->
+                <h1 class="logo">
+                    <a href="https://egg.live/" class="fuente-acento">Mi web</a>
+                </h1> 
+                <nav>
+                    <input type="checkbox" id="check" />
+                    <label for="check" class="checkbtn">
+                    <i class="fa-solid fa-bars"></i>
+                    </label>
+                    <ul> <!-- lista de menu -->
+                        <li><a href="index.html">INICIO</a></li>
+                        <li><a href="#acerca">ACERCA DE MI</a></li>
+                        <li><a href="#trabajos">TRABAJOS</a></li>
+                        <li><a href="#trabajos">SERVICIOS</a></li>
+                        <li><a href="#contacto">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- -------------------------------------------------------- -->
+            <!-- -----------------cuerpo--------------------------------- -->
+            <main id="seccion-principal">
+                <section class="seccion-1">
+                    <div class="acerca-de">
+                        <h2 class="acerca-titulo">Acerca de mí</h2>
+                        <p class="parrafo1">¡Bienvenido a mi página! Aquí, aprenderás más sobre mi.<br/>Me llamo Franco, naci en lima-Perú.<br/>
+                        Me gusta el helado y salir a pasear.<br/>
+                        Me encanta programar para poder ayudar a las personas.
+                        </p>
+                    </div>
+                    <div class="acerca-imagen">
+                        <img src="img/hombre.jpg" alt="imagen portada"/>
+                    </div>
+                </section> 
+                <section class="seccion-2">
+                    <img src="img/lima-noche.jpeg" alt="imagen carrusel">
+                </section>
+                <section class="seccion-3">
+                    <div class="cuerpo-articulo">
+                        <div class="articulo-tres">
+                            <img src="img/articulo2.jpg" alt="imagen articulo">
+                            <p>Titulo 1</p>
+                            <p>Con estos recursos te invito a recargar tu mochila<br/>
+                                creativa, trabajar sobre tu branding personal,<br/>
+                                explorar la técnica del collage y reconectar con tu<br/>
+                                niñx interior. ¡Descargalos y empezá hoy mismo!</p>
+                            <p><a href="#imagen">Leer más</a></p>
+                        </div>
+                    </div>
+                    <div class="cuerpo-articulo">
+                        <div class="articulo-tres">
+                            <img src="img/articulo2.jpg" alt="imagen articulo">
+                            <p>Titulo 1</p>
+                            <p>Con estos recursos te invito a recargar tu mochila<br/>
+                                creativa, trabajar sobre tu branding personal,<br/>
+                                explorar la técnica del collage y reconectar con tu<br/>
+                                niñx interior. ¡Descargalos y empezá hoy mismo!</p>
+                            <p><a href="#imagen">Leer más</a></p>
+                        </div>
+                    </div>
+                    <div class="cuerpo-articulo">
+                        <div class="articulo-tres">
+                            <img src="img/articulo2.jpg" alt="imagen articulo">
+                            <p>Titulo 1</p>
+                            <p>Con estos recursos te invito a recargar tu mochila<br/>
+                                creativa, trabajar sobre tu branding personal,<br/>
+                                explorar la técnica del collage y reconectar con tu<br/>
+                                niñx interior. ¡Descargalos y empezá hoy mismo!</p>
+                            <p><a href="#imagen">Leer más</a></p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- ------------------------------------------------------------ -->
+            <!-- --------------------------footer----------------------- -->
+            <footer id="contacto">
+                <div id="footer"> 
+                    <a href="index.html"><i class="fa-solid fa-house-chimney fixed"></i></a><!--colocamos fixed para identificarlo mejor-->
+                    <h3>Contacto</h3>
+                    <nav>
+                        <ul>
+                            <li><a href>Instagram</a></li>
+                            <li><a href>Tiktok</a></li>
+                            <li><a href>WhastApp</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+            <!------------------------------------------------------------>
+        </div>
+    </body>
+</html>
