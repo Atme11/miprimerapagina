@@ -168,7 +168,8 @@ los elementos pasan a posicionarse en vertical*/
 } 
 /*------------------------------------*/
 
-.greeting{
-    font-size: 30px;
+.hola{
+    font-size: 120px;
     color:red;
+    background-color: violet;
 }
