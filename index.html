@@ -20,17 +20,16 @@
                 <h1 class="logo">
                     <a href="https://egg.live/" class="fuente-acento">Mi web</a>
                 </h1> 
-                <nav>
-                    <input type="checkbox" id="check" />
-                    <label for="check" class="checkbtn">
+                <label for="check" class="checkbtn">
                     <i class="fa-solid fa-bars"></i>
-                    </label>
-                    <ul> <!-- lista de menu -->
-                        <li><a href="index.html">INICIO</a></li>
-                        <li><a href="#acerca">ACERCA DE MI</a></li>
-                        <li><a href="#trabajos">TRABAJOS</a></li>
-                        <li><a href="#trabajos">SERVICIOS</a></li>
-                        <li><a href="#contacto">CONTACTO</a></li>
+                </label>
+                <nav class="navbar">
+                    <ul class="menu"> <!-- lista de menu -->
+                        <li><a class="navli" href="index.html">INICIO</a></li>
+                        <li><a class="navli" href="#acerca">ACERCA DE MI</a></li>
+                        <li><a class="navli" href="#trabajos">TRABAJOS</a></li>
+                        <li><a class="navli"href="#trabajos">SERVICIOS</a></li>
+                        <li><a class="navli" href="#contacto">CONTACTO</a></li>
                     </ul>
                 </nav>
             </header>
@@ -48,10 +47,12 @@
                     <div class="acerca-imagen">
                         <img src="img/hombre.jpg" alt="imagen portada"/>
                     </div>
-                </section> 
+                </section>
+                <!-- -------------------------------------------------------- -->
                 <section class="seccion-2">
                     <img src="img/lima-noche.jpeg" alt="imagen carrusel">
                 </section>
+                <!-- -------------------------------------------------------- -->
                 <section class="seccion-3">
                     <div class="cuerpo-articulo">
                         <div class="articulo-tres">
@@ -85,6 +86,37 @@
                                 niñx interior. ¡Descargalos y empezá hoy mismo!</p>
                             <p><a href="#imagen">Leer más</a></p>
                         </div>
+                    </div>
+                </section>
+                <section class="seccion-4">
+                    <div class="form-header">
+                        <p class="titulo-formulario">Contacto</p>
+                        <p><em>¡Esperamos tu consulta!</em></p>
+
+                        <form action="" method="get" class="formulario" id="form">
+                            <div class="form-row">
+                                <label for="nombre">Nombre</label>
+                                <input id="nombre" name="nombre" type="text" />
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input
+                                  id="email"
+                                  name="email"
+                                  type="email"
+                                  placeholder="pepe@gmail.com"
+                                  required
+                                />
+                            </div>
+                            <div class="form-row">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <button>Enviar</button>
+                              </div>
+                              <p class="alertas" id="alertas"></p>
+                          </form>
                     </div>
                 </section>
             </main>

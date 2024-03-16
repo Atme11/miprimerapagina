@@ -39,3 +39,12 @@ function cambiarTexto(nombre,ciudad,gusto){
     return contenido;
 }
 parrafo.innerText=cambiarTexto(nombre,ciudad,gusto);
+
+//------Boton de Menu--------
+let menu_responsive = document.querySelector(".checkbtn");
+
+menu_responsive.onclick = function(){
+    navBar = document.querySelector(".navbar");
+    navBar.classList.toggle("active"); //convierta la palabra active a la class navbar
+};
+//-------------------------------
